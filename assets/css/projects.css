@@ -1,184 +1,243 @@
 .projects-container-main {
-    display: flex;
-    overflow-x: hidden;
-    position: sticky;
-    top: 0;
-    height: 100vh;
-    gap: 80px;
+  display: flex;
+  overflow-x: hidden;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  gap: 80px;
 }
 
 .project-item {
-    height: 100vh;
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    position: relative;
+  height: 100vh;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  position: relative;
 }
 
 .project-item img {
-    width: 40vw;
-    height: 30vw;
+  width: 40vw;
+  height: 30vw;
 }
 
 .project-item:first-child {
-    padding-left: 216px;
+  padding-left: 216px;
 }
 
 .project-item:last-child {
-    padding-right: 216px;
+  padding-right: 216px;
 }
 
 .project-item:first-child .project-overlay {
-    left: 216px;
+  left: 216px;
 }
 
 .project-item:last-child .project-overlay {
-    right: 216px;
+  right: 216px;
 }
 
 .project-overlay {
-    width: 40vw;
-    height: 30vw;
-    position: absolute;
-    background: linear-gradient(0deg, rgba(0, 20, 35, 0.8), rgba(0, 20, 35, 0.8));
-    border-radius: 16px;
-    z-index: 2;
-    display: grid;
-    align-items: center;
-    align-content: center;
-    grid-gap: 40px;
-    justify-content: center;
-    justify-items: center;
-    display: none;
-    animation-name: animateprojectoverlay;
-    animation-duration: 0.2s;
+  width: 40vw;
+  height: 30vw;
+  position: absolute;
+  background: linear-gradient(0deg, rgba(0, 20, 35, 0.8), rgba(0, 20, 35, 0.8));
+  border-radius: 16px;
+  z-index: 2;
+  display: grid;
+  align-items: center;
+  align-content: center;
+  grid-gap: 40px;
+  justify-content: center;
+  justify-items: center;
+  display: none;
+  animation-name: animateprojectoverlay;
+  animation-duration: 0.2s;
 }
 
 .project-overlay h3 {
-    font-family: 'Mont';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 64px;
-    line-height: 82px;
-    text-align: center;
-    color: #FFFFFF;
+  font-family: "Mont";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 82px;
+  text-align: center;
+  color: #ffffff;
 }
 
 .btn-light-projects {
-    padding: 20px 32px;
-    background-color: #fff;
-    border-radius: 100px;
-    display: grid;
-    grid-auto-flow: column;
-    align-items: center;
-    grid-gap: 24px;
-    font-family: 'Mont';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 23px;
-    color: var(--main-black);
+  padding: 20px 32px;
+  background-color: #fff;
+  border-radius: 100px;
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  grid-gap: 24px;
+  font-family: "Mont";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  color: var(--main-black);
 }
 
 .btn-light-projects:hover {
-    background-color: var(--main-blue);
-    color: var(--white);
+  background-color: var(--main-blue);
+  color: var(--white);
 }
 
-.btn-light-projects:hover>svg path {
-    fill: var(--white);
+.btn-light-projects:hover > svg path {
+  fill: var(--white);
 }
 
-.project-item:hover>.project-overlay {
-    display: grid;
+.project-item:hover > .project-overlay {
+  display: grid;
 }
 
 @keyframes animateprojectoverlay {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 #project-item-view-more button a {
-    background-color: var(--main-black);
-    height: 30vw;
-    padding: 32px;
-    border-radius: 16px;
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    transition: 0.2s ease-in-out;
+  background-color: var(--main-black);
+  height: 30vw;
+  padding: 32px;
+  border-radius: 16px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  transition: 0.2s ease-in-out;
 }
 
 #project-item-view-more button a span {
-    font-size: 18px;
-    font-weight: 700;
-    color: var(--white);
-    transform: rotateZ(-90deg);
-    width: 100%;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--white);
+  transform: rotateZ(-90deg);
+  width: 100%;
 }
 
 #project-item-view-more button a:hover {
-    background-color: var(--main-blue);
+  background-color: var(--main-blue);
 }
-
-
 
 /* PROJECTS 2 */
 
 .projects-container-2 {
-    margin-bottom: 160px;
-    margin-top: 80px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 32px;
+  margin-bottom: 160px;
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 32px;
 }
 
 .prj-item {
-    margin-top: 32px;
-    overflow: hidden;
+  margin-top: 32px;
+  overflow: hidden;
 }
 
 .prj-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 12px;
-    transition: 0.2s ease-in-out;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  transition: 0.2s ease-in-out;
 }
 
 .prj-item h3 {
-    margin-top: 32px;
-    font-family: 'Mont';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 36px;
-    line-height: 46px;
-    color: var(--main-black);
+  margin-top: 32px;
+  font-family: "Mont";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 46px;
+  color: var(--main-black);
 }
 
 .prj-item p {
-    font-family: 'Mont';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    color: var(--grey-light-1);
-    margin-top: 12px;
+  font-family: "Mont";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--grey-light-1);
+  margin-top: 12px;
 }
 
 .prj-item:hover > h3 {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .prj-item:hover > img {
-    transform: scale(1.05);
-    transform-origin: bottom;
-    border-radius: 12px;
+  transform: scale(1.05);
+  transform-origin: bottom;
+  border-radius: 12px;
 }
 
 .prj-item-image-holder {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .section-projects h2 {
+    font-size: 36px;
+    line-height: 46px;
+  }
+
+  .projects-container-2 {
+    margin-bottom: 120px;
+    margin-top: 32px;
+  }
+
+  .prj-item {
+    margin-top: 0px;
+  }
+
+  .prj-item h3 {
+    margin-top: 24px;
+    font-size: 24px;
+    line-height: 31px;
+  }
+
+  .prj-item p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .projects-container-2 {
+    grid-template-columns: 1fr;
+    margin-bottom: 52px;
+  }
+
+  .prj-item h3 {
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  .prj-item p {
+    margin-top: 4px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .section-projects h2 {
+    font-size: 24px;
+    line-height: 31px;
+  }
+
+  .projects-container-2 {
+    margin-top: 24px;
+  }
+
+  .prj-item h3 {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
