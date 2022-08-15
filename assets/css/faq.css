@@ -1,0 +1,126 @@
+    .outer-section-faq {
+        margin-top: 160px;
+        margin-bottom: 160px;
+    }
+    
+    .outer-section-faq.outer-container {
+        max-width: 1312px;
+    }
+    
+    .section-faq {
+        display: grid;
+        grid-gap: 64px;
+    }
+    
+    .section-faq h2 {
+        text-align: center;
+    }
+    
+    .section-faq .p-normal {
+        color: #B5CBD4;
+        text-align: center;
+        max-width: 703px;
+        margin: auto;
+        margin-top: 16px;
+        margin-bottom: 80px;
+    }
+    
+    .faqs-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 32px;
+        align-items: start;
+        justify-content: center;
+    }
+    
+    .faq-container {
+        border: 1px solid rgba(0, 20, 35, 0.1);
+        border-radius: 8px;
+        position: relative;
+    }
+    
+    .faq-bg-overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: var(--grey-light-3);
+        z-index: -1;
+        display: none;
+        animation: faqbganimation;
+        animation-duration: 0.5s;
+    }
+    
+    .question {
+        font-size: 1.2rem;
+        font-weight: 600;
+        padding: 24px 40px;
+        padding-right: 96px;
+        /* position: relative; */
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    
+    .question h3 {
+        color: var(--grey-light-1);
+        font-family: 'Mont';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        transition: 0.2s ease-in-out;
+    }
+    
+    .question::after {
+        content: '';
+        font-size: 2.2rem;
+        position: absolute;
+        right: 44px;
+        transition: 0.2s;
+        z-index: 2;
+        width: 16px;
+        height: 16px;
+        background: url('../img/plus.svg');
+        overflow: hidden;
+        background-position: center center;
+    }
+    
+    .question.active-faq::after {
+        transform: rotate(45deg);
+    }
+    
+    .question.active-faq h3 {
+        font-family: 'Mont';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        color: var(--main-black);
+    }
+    
+    .question.active-faq .faq-bg-overlay {
+        display: block;
+    }
+    
+    .answercont {
+        max-height: 0;
+        overflow: hidden;
+        transition: 0.3s;
+    }
+    
+    .answer {
+        padding: 8px 40px 40px 40px;
+    }
+    
+    @keyframes faqbganimation {
+        0% {
+            height: 0;
+            bottom: 100%;
+        }
+        100% {
+            height: 100%;
+            bottom: 0;
+        }
+    }

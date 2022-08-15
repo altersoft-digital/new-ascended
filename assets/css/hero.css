@@ -1,0 +1,53 @@
+@import url('./styles.css');
+h1 span {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    color: var(--grey-light-2);
+    display: block;
+    margin-bottom: 12px;
+}
+
+.outer-header-hero {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+h1 {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 96px;
+    color: var(--main-black);
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+}
+
+.section-hero .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px 16px;
+    max-width: 670px;
+    justify-content: center;
+    margin-top: 52px;
+}
+
+.section-hero {
+    display: grid;
+    width: 100%;
+    align-content: start;
+    justify-content: center;
+    justify-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+#p-hero {
+    max-width: 570px;
+    margin-top: 52px;
+}

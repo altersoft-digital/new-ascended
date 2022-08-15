@@ -1,0 +1,28 @@
+@import url('./styles.css');
+#cursor {
+    pointer-events: none;
+    width: 8px;
+    height: 8px;
+    background-color: var(--main-black);
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 0.35s ease width, 0.35s ease height, 0.35s ease border, 0.35s ease background;
+    transform: translate(-50%, -50%);
+    z-index: 100000;
+}
+
+#cursor.button {
+    width: 3rem;
+    height: 3rem;
+    border: solid 1px transparent;
+    background: rgba(56, 168, 255, 0.3);
+}
+
+@media (pointer:none),
+(pointer:coarse) {
+    #cursor {
+        display: none;
+    }
+}

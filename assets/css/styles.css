@@ -1,0 +1,298 @@
+:root {
+    --white: #fff;
+    --main-black: #001423;
+    --main-black-2: #00233E;
+    --main-blue: #008FFF;
+    /* LIGHT VARIABLES */
+    --grey-light-1: #4D5B66;
+    --grey-light-2: #99A1A7;
+    --grey-light-3: #F7F8F8;
+    /* DARK VARIABLES */
+    --black-dark-1: #00050A;
+    --black-dark-2: #0D1216;
+    --grey-dark-1: #B2B4B5;
+    --grey-dark-2: #66696C;
+}
+
+*::-webkit-scrollbar {
+    background-color: transparent;
+    width: 8px;
+}
+
+*::-webkit-scrollbar-thumb {
+    border-radius: 99px;
+    background-color: var(--main-black);
+}
+
+::selection {
+    color: var(--white);
+    background: var(--main-black);
+}
+
+@font-face {
+    font-family: 'Mont';
+    src: url('../fonts/Mont-Book.otf');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mont';
+    src: url('../fonts/Mont-SemiBold.otf');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Mont';
+    font-weight: 500;
+    scrollbar-width: 0;
+    transition: 0.2s ease-in-out;
+}
+
+html {
+    font-size: 18px;
+    transition: 0.2s ease-in-out;
+    /* cursor: none; */
+    scroll-behavior: smooth;
+}
+
+body {
+    max-width: 1920px;
+    overflow-x: hidden;
+    margin: auto;
+    scroll-behavior: smooth;
+}
+
+.container {
+    margin: 0 64px;
+}
+
+.outer-container {
+    max-width: 1616px;
+    margin: auto;
+}
+
+.btn {
+    border: none;
+    background: none;
+    outline: none;
+    transition: 0.2s ease-in-out;
+    cursor: pointer !important;
+}
+
+.btn a,
+.btn span,
+.btn {
+    color: var(--main-black);
+    font-size: 18px;
+}
+
+.btn-light-secondary {
+    padding: 18px 32px;
+    border: 1px solid rgba(0, 20, 35, 0.1);
+    border-radius: 100px;
+}
+
+.btn-light-secondary:hover {
+    background-color: var(--main-black);
+    color: var(--white);
+}
+
+.btn-light-secondary:hover>a,
+.btn-light-secondary:hover>span {
+    color: var(--white);
+}
+
+.btn-circle {
+    border-radius: 100px;
+    width: 64px;
+    height: 64px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.btn-light-filled {
+    background-color: var(--main-black);
+}
+
+.btn-light-filled.btn-circle:hover {
+    background-color: var(--main-blue);
+}
+
+.btn-light-outline {
+    border: 1px solid var(--main-black);
+}
+
+.btn-light-outline.btn-circle:hover {
+    background-color: var(--main-black);
+}
+
+#btn-scrolltop {
+    display: none;
+    transition: 0.2s ease-in-out;
+    animation: scrolltopactive;
+    animation-duration: 0.5s;
+}
+
+@keyframes scrolltopactive {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.show {
+    display: block !important;
+}
+
+.btn-light-outline.btn-circle:hover>svg path {
+    fill: var(--white);
+}
+
+.p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-grey-light-1 {
+    color: var(--grey-light-1);
+}
+
+.text-16 {
+    font-size: 16px;
+}
+
+.right-bottom-floating-buttons-container {
+    display: grid;
+    grid-gap: 24px;
+    align-items: center;
+    justify-items: center;
+    position: fixed;
+    right: 64px;
+    bottom: 64px;
+    z-index: 2;
+}
+
+h2 {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    color: var(--main-black);
+}
+
+#btn-burger-menu {
+    position: fixed;
+    right: 64px;
+    top: 60px;
+    z-index: 2;
+}
+
+.inpt-regular {
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgba(0, 20, 35, 0.1);
+    color: var(--main-black);
+    font-family: 'Mont';
+    font-style: normal;
+    font-size: 18px;
+    line-height: 28px;
+    padding: 12px 0;
+}
+
+.inpt-regular:focus {
+    border-bottom: 2px solid rgb(0, 20, 35);
+}
+
+.inpt-regular::placeholder {
+    color: var(--grey-light-1);
+}
+
+textarea {
+    resize: none;
+    height: 200px;
+}
+
+.btn-light-primary {
+    background-color: var(--main-black);
+    padding: 24px 64px;
+    color: var(--white);
+    border-radius: 100px;
+    transition: 0.2s ease-in-out;
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.btn-light-primary:hover {
+    background-color: var(--main-blue);
+}
+
+
+/* ABOVE HEADER NOTIFICATION */
+
+.section-above-header-notification {
+    background-color: var(--main-black);
+    padding: 16px;
+    display: grid;
+    justify-items: center;
+}
+
+.section-above-header-notification p {
+    color: var(--white);
+}
+
+
+/* DARK THEME STYLES */
+
+.white-text {
+    color: var(--white) !important;
+}
+
+.dark-bg {
+    background-color: var(--black-dark-1) !important;
+}
+
+
+@media only screen and (max-width: 1440px) {
+    .container {
+        margin: 0 40px;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .container {
+        margin: 0 32px;
+    }
+}
+
+@media only screen and (max-width: 428px) {
+    .container {
+        margin: 0 24px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .container {
+        margin: 0 16px;
+    }
+}
