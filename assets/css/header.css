@@ -1,188 +1,189 @@
-@import url('./styles.css');
+@import url("./styles.css");
 .header {
-    display: grid;
-    grid-auto-flow: column;
-    align-items: center !important;
-    grid-template-columns: auto 1fr auto;
-    padding: 52px 0;
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center !important;
+  grid-template-columns: auto 1fr auto;
+  padding: 52px 0;
 }
-
 
 /* ------------------------------ SLIDER START ------------------------------ */
 
 #switch_container {
-    display: grid;
-    justify-items: center;
+  display: grid;
+  justify-items: center;
 }
 
 .slider svg {
-    position: absolute;
-    z-index: 2;
-    right: 12px;
-    top: 50%;
-    transform: translateY(-50%);
-    transition: 0.2s ease-in-out;
+  position: absolute;
+  z-index: 2;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 0.2s ease-in-out;
 }
-
 
 /* The switch - the box around the slider */
 
 .switch {
-    position: relative;
-    display: inline-block;
-    width: 70px;
-    height: 32px;
+  position: relative;
+  display: inline-block;
+  width: 70px;
+  height: 32px;
 }
-
 
 /* Hide default HTML checkbox */
 
 .switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
+  opacity: 0;
+  width: 0;
+  height: 0;
 }
-
 
 /* The slider */
 
 .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: var(--grey-light-3);
-    -webkit-transition: .4s;
-    transition: .4s;
-    outline: none;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--grey-light-3);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  outline: none;
 }
 
 .slider:before {
-    position: absolute;
-    content: "";
-    height: 28px;
-    width: 28px;
-    left: 2px;
-    bottom: 2px;
-    background-color: var(--main-black);
-    -webkit-transition: .4s;
-    transition: .4s;
-    outline: none;
+  position: absolute;
+  content: "";
+  height: 28px;
+  width: 28px;
+  left: 2px;
+  bottom: 2px;
+  background-color: var(--main-black);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  outline: none;
 }
 
-input:checked+.slider {
-    background-color: var(--black-dark-2);
+input:checked + .slider {
+  background-color: var(--black-dark-2);
 }
 
-input:checked+.slider svg {
-    transform: translateX(-30px) translateY(-50%);
+input:checked + .slider svg {
+  transform: translateX(-30px) translateY(-50%);
 }
 
-input:checked+.slider svg path {
-    fill: var(--white);
+input:checked + .slider svg path {
+  fill: var(--white);
 }
 
-input:focus+.slider {
-    box-shadow: 0 0 1px var(--black-dark-2);
+input:focus + .slider {
+  box-shadow: 0 0 1px var(--black-dark-2);
 }
 
-input:checked+.slider:before {
-    -webkit-transform: translateX(38px);
-    -ms-transform: translateX(38px);
-    transform: translateX(38px);
-    background-color: var(--white);
+input:checked + .slider:before {
+  -webkit-transform: translateX(38px);
+  -ms-transform: translateX(38px);
+  transform: translateX(38px);
+  background-color: var(--white);
 }
-
 
 /* Rounded sliders */
 
 .slider.round {
-    border-radius: 34px;
+  border-radius: 34px;
 }
 
 .slider.round:before {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
 #logo img {
-    width: 48px;
-    height: 48px;
+  width: 48px;
+  height: 48px;
 }
 
 #burger_menu {
-    width: 32px;
-    height: 32px;
+  width: 32px;
+  height: 32px;
 }
 
 #logo {
-    display: grid;
-    justify-items: center;
-    align-items: center;
+  display: grid;
+  justify-items: center;
+  align-items: center;
 }
 
 #btn-burger-menu {
-    display: grid;
-    justify-items: center;
-    align-items: center;
+  display: grid;
+  justify-items: center;
+  align-items: center;
 }
-
 
 /* ------------------------------ SLIDER END ------------------------------ */
 
 @media only screen and (max-width: 1440px) {
-    #logo img {
-        width: 36px;
-        height: 36px;
-    }
+  #logo img {
+    width: 36px;
+    height: 36px;
+  }
 
-    .header {
-        padding: 32px 0;
-    }
+  .header {
+    padding: 32px 0;
+  }
 
-    #btn-burger-menu {
-        top: 34px !important;
-        right: 40px !important;
-    }
+  #btn-burger-menu {
+    top: 34px !important;
+    right: 40px !important;
+  }
 }
 
 @media only screen and (max-width: 1366px) {
-    #logo img {
-        width: 32px;
-        height: 32px;
-    }
+  #logo img {
+    width: 32px;
+    height: 32px;
+  }
 
-    #burger_menu {
-        width: 24px;
-        height: 24px;
-    }
+  #burger_menu {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 @media only screen and (max-width: 1280px) {
-    #logo img {
-        width: 28px;
-        height: 28px;
-    }
+  #logo img {
+    width: 28px;
+    height: 28px;
+  }
 
-    #burger_menu {
-        width: 24px;
-        height: 24px;
-    }
+  #burger_menu {
+    width: 24px;
+    height: 24px;
+  }
 
-    .header {
-        padding: 24px 0;
-    }
+  .header {
+    padding: 24px 0;
+  }
 
-    #btn-burger-menu {
-        top: 26px !important;
-        right: 32px !important;
-    }
+  #btn-burger-menu {
+    top: 26px !important;
+    right: 32px !important;
+  }
+  .popup-menu {
+    padding-top: 26px !important;
+    padding-right: 32px !important;
+  }
 }
 
 @media only screen and (max-width: 428px) {
-    #btn-burger-menu {
-        top: 26px !important;
-        right: 24px !important;
-    }
+  #btn-burger-menu {
+    top: 26px !important;
+    right: 24px !important;
+  }
+  .popup-menu {
+    padding-right: 24px !important;
+  }
 }
