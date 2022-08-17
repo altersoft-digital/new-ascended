@@ -81,6 +81,10 @@
   color: var(--main-blue);
 }
 
+.dark-bg .contact-option a:hover {
+  text-decoration-color: var(--main-blue);
+}
+
 .footer-bottom {
   display: flex;
   justify-content: space-between;

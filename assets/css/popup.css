@@ -111,9 +111,18 @@
 .popup-menu-nav ul li:hover {
   border-image-source: linear-gradient(
     to left,
-    rgba(0, 20, 35, 0),
+    rgba(1, 27, 48, 0),
     rgba(0, 20, 35, 0.1),
     rgba(0, 20, 35, 0)
+  );
+}
+
+.dark-bg .popup-menu-nav ul li:hover {
+  border-image-source: linear-gradient(
+    to left,
+    rgba(8, 129, 228, 0.3),
+    rgba(3, 107, 187, 0.4),
+    rgba(1, 83, 146, 0.3)
   );
 }
 
@@ -133,7 +142,7 @@
   color: var(--main-black);
 }
 
-.popup-menu-nav ul li a img {
+.popup-menu-nav ul li a svg {
   justify-self: end;
   display: none;
   animation-name: menuArrowAnimate;
@@ -141,8 +150,12 @@
   animation-timing-function: ease-in-out;
 }
 
-.popup-menu-nav ul li a:hover > img {
+.popup-menu-nav ul li a:hover > svg {
   display: block;
+}
+
+.dark-bg .popup-menu-nav ul li a:hover > svg path {
+  fill: white;
 }
 
 @keyframes menuArrowAnimate {

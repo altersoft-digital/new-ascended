@@ -13,7 +13,7 @@ document.addEventListener("scroll", function (e) {
 });
 
 function switchTheme() {
-  document.body.classList.add("dark-bg");
-  document.querySelector("h1").classList.add("white-text");
+  document.body.classList.toggle("dark-bg");
+  // document.querySelector("h1").classList.add("white-text");
   // document.querySelector
 }
