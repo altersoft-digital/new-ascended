@@ -262,14 +262,101 @@ textarea {
 
 /* DARK THEME STYLES */
 
-.white-text {
+.dark-bg * {
   color: var(--white) !important;
 }
 
-.dark-bg {
+.dark-bg,
+.dark-bg div {
   background-color: var(--black-dark-1) !important;
 }
 
+.dark-bg footer,
+.dark-bg footer div {
+  background-color: #0d1216 !important;
+}
+
+.dark-bg .btn-light-primary {
+  background-color: #fff !important;
+  color: #001423 !important;
+}
+
+.dark-bg .budget-selectors input:checked + label {
+  background-color: #fff !important;
+  color: #001423 !important;
+}
+.dark-bg .budget-selectors input:checked + label .text-16 {
+  color: #001423 !important;
+}
+
+.dark-bg .right-bottom-floating-buttons-container {
+  background-color: unset !important;
+}
+
+.dark-bg .inpt-regular {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.inputs-container * {
+  color: rgb(178, 180, 181) !important;
+}
+
+.dark-bg .text-grey-light-1 {
+  color: #b2b4b5 !important;
+}
+.dark-bg .faq-container {
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.dark-bg .faq-container .active-faq,
+.dark-bg .faq-container .answercont,
+.dark-bg .faq-container .answercont div {
+  background-color: #0d1216 !important;
+}
+
+.dark-bg .faq-container .question::after {
+  background: url(../img/cooliconwhiteX.svg);
+  background-position: center center !important;
+}
+
+.dark-bg .faq-container .question h3 {
+  color: var(--grey-light-1);
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.dark-bg .bg-section-team,
+.dark-bg .bg-section-team div {
+  background-color: #0d1216 !important;
+}
+
+.dark-bg .bg-section-team .team-member-main {
+  background-color: #000000 !important;
+}
+
+.dark-bg .bg-section-team .team-member-main .text-grey-light-1 {
+  color: #66727b !important;
+}
+
+.dark-bg .btn-light-secondary {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 87px;
+}
+
+.dark-bg .prj-item p {
+  color: var(--grey-light-1) !important;
+}
+
+.blackmode {
+  display: none;
+}
+
+.dark-bg .blackmode {
+  display: block;
+}
+
+.dark-bg .lightmode {
+  display: none;
+}
 @media only screen and (max-width: 1440px) {
   .container {
     margin: 0 40px;
