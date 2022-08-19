@@ -80,6 +80,10 @@ body {
   margin: auto;
 }
 
+.hidden {
+  display: none !important;
+}
+
 .btn {
   border: none;
   background: none;
@@ -109,6 +113,18 @@ body {
 .btn-light-secondary:hover > a,
 .btn-light-secondary:hover > span {
   color: var(--white);
+}
+
+.btn-light-secondary:hover > svg path {
+  fill: var(--white);
+}
+
+.dark-bg .btn-light-secondary:hover > svg path {
+  fill: var(--main-black);
+}
+
+.dark-bg .btn-light-secondary > svg path {
+  fill: var(--white);
 }
 
 .dark-bg .btn-light-secondary:hover {
@@ -437,6 +453,11 @@ textarea {
 
   .btn-light-secondary {
     padding: 14px 24px;
+  }
+
+  .dark-bg .btn-light-secondary {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 87px;
   }
 }
 
