@@ -459,11 +459,44 @@ textarea {
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 87px;
   }
+
+  .btn-circle {
+    border-radius: 100px;
+    width: 48px;
+    height: 48px;
+  }
+
+  .btn-circle svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .right-bottom-floating-buttons-container {
+    grid-gap: 18px;
+    right: 32px;
+    bottom: 32px;
+  }
 }
 
 @media only screen and (max-width: 428px) {
   .container {
     margin: 0 24px;
+  }
+
+  .btn-circle {
+    border-radius: 100px;
+    width: 48px;
+    height: 48px;
+  }
+
+  .btn-circle svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .right-bottom-floating-buttons-container {
+    right: 24px;
+    bottom: 24px;
   }
 }
 
