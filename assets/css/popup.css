@@ -1,4 +1,4 @@
-.popup-overlay {
+.popup-overlay.show-popup {
   position: fixed;
   width: 100vw;
   height: 100vh;
@@ -82,6 +82,11 @@
   display: none;
   align-content: start;
   grid-template-rows: auto auto 1fr;
+}
+
+.dark-bg .popup-menu,
+.dark-bg .popup-menu div {
+  background-color: var(--main-black) !important;
 }
 
 .popup-menu-header {
